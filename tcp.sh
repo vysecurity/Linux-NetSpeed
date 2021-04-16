@@ -14,9 +14,9 @@ sh_ver="1.3.2"
 github="raw.githubusercontent.com/chiakge/Linux-NetSpeed/master"
 
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
-Info="${Green_font_prefix}[信息]${Font_color_suffix}"
-Error="${Red_font_prefix}[错误]${Font_color_suffix}"
-Tip="${Green_font_prefix}[注意]${Font_color_suffix}"
+Info="${Green_font_prefix}[INFO]${Font_color_suffix}"
+Error="${Red_font_prefix}[ERROR]${Font_color_suffix}"
+Tip="${Green_font_prefix}[WARN]${Font_color_suffix}"
 
 #安装BBR内核
 installbbr(){
@@ -260,7 +260,7 @@ remove_all(){
 		bash <(wget --no-check-certificate -qO- https://github.com/MoeClub/lotServer/raw/master/Install.sh) uninstall
 	fi
 	clear
-	echo -e "${Info}:清除加速完成。"
+	echo -e "${Info}:Acceleration succesfully completed"
 	sleep 1s
 }
 
